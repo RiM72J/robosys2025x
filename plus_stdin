@@ -1,4 +1,4 @@
-#!/usr/bin/python3import sys
+#!/usr/bin/python3
 import sys
 
 ans = 0.0
