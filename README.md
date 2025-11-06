@@ -1,6 +1,6 @@
 # robosys2025
 
-
+[![test](https://github.com/RiM72J/robosys2025x/actions/workflows/test.yml/badge.svg)](https://github.com/RiM72J/robosys2025x/actions/workflows/test.yml)
 
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，robosys2025由来のコード（© 2025 Ryuichi Ueda）を利用しています．
