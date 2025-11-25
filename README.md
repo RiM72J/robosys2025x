@@ -35,9 +35,10 @@ $ seq 5 | ./factorize
 3: 3
 4: 2 2
 5: 5
-```
+
 ## インストール / Install
 -リポジトリをクローンしてください。
+
 ```
 git clone [https://github.com/RiM72J/robosys2025x.git](https://github.com/RiM72J/robosys2025x.git)
 cd robosys2025x
