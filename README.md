@@ -20,8 +20,9 @@
 $ echo 12 | ./factorize
 12: 2 2 3
 $ echo 100 | ./factorize
-100: 2 2 5 5
+100: 2 2 5 
 
+---
 -seqコマンドも使うことができます。
 ```
 $ seq 5 | ./factorize
@@ -33,6 +34,7 @@ $ seq 5 | ./factorize
 
 ## インストール / Install
 -リポジトリをクローンしてください。
+```
 git clone [https://github.com/RiM72J/robosys2025x.git](https://github.com/RiM72J/robosys2025x.git)
 cd robosys2025x
 
