@@ -1,4 +1,4 @@
-# 因数分解
+# 因数分解する
 
 [![test](https://github.com/RiM72J/robosys2025x/actions/workflows/test.yml/badge.svg)](https://github.com/RiM72J/robosys2025x/actions/workflows/test.yml)
 
