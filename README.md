@@ -16,14 +16,14 @@
 ## 使用方法 / Usage
 -標準入力から整数を渡します
 
-
-$ echo 12 | ./factorze
+```bash
+$ echo 12 | ./factorize
 12: 2 2 3
-$ echo 100 | ./factorze
+$ echo 100 | ./factorize
 100: 2 2 5 5
 
 -seqコマンドも使うことができます。
-'''
+```
 $ seq 5 | ./factorize
 1: 1
 2: 2
