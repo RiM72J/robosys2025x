@@ -1,0 +1,48 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Ryomu Inukai
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import signal
+
+signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+
+def prime_factorization(n):
+    factors = []
+    while n % 2 == 0:
+        factors.append(2)
+        n //= 2
+    
+    f = 3
+    while f * f <= n:
+        if n % f == 0:
+            factors.append(f)
+            n //= f
+        else:
+            f += 2
+            
+    if n > 1:
+        factors.append(n)
+    return factors
+
+def main():
+    for line in sys.stdin:
+        try:
+            line = line.strip()
+            if not line:
+                continue
+
+            num = int(line)
+            
+            factors = prime_factorization(num)
+            
+            print(f"{num}: {' '.join(map(str, factors))}")
+            
+            sys.stdout.flush()
+
+        except ValueError:
+            print(f"Error: '{line}' is not an integer.", file=sys.stderr)
+            sys.exit(1)
+
+if __name__ == '__main__':
+    main()
