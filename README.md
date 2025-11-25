@@ -18,11 +18,14 @@
 
 ```bash
 $ echo 12 | ./factorize
+```
 12: 2 2 3
+```
 $ echo 100 | ./factorize
+```
 100: 2 2 5 
 
----
+
 -seqコマンドも使うことができます。
 ```
 $ seq 5 | ./factorize
@@ -31,13 +34,13 @@ $ seq 5 | ./factorize
 3: 3
 4: 2 2
 5: 5
-
+```
 ## インストール / Install
 -リポジトリをクローンしてください。
 ```
 git clone [https://github.com/RiM72J/robosys2025x.git](https://github.com/RiM72J/robosys2025x.git)
 cd robosys2025x
-
+```
 ## ライセンス/ License
 -このソフトウェアは、BSD 3条項ライセンスの下で公開されています。
 Copyright (c) 2025 Ryomu Inukai
