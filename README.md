@@ -16,6 +16,8 @@
 ## 使用方法 / Usage
 -標準入力から整数を渡します。
 
+
+'''bash
 $ echo 12 | ./factorze
 12: 2 2 3
 $ echo 100 | ./factorze
