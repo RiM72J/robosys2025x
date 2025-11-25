@@ -16,12 +16,12 @@
 ## 使用方法 / Usage
 -標準入力から整数を渡します
 
-'''
+
 $ echo 12 | ./factorze
 12: 2 2 3
 $ echo 100 | ./factorze
 100: 2 2 5 5
----
+
 -seqコマンドも使うことができます。
 '''
 $ seq 5 | ./factorize
@@ -30,7 +30,7 @@ $ seq 5 | ./factorize
 3: 3
 4: 2 2
 5: 5
----
+
 ## インストール / Install
 -リポジトリをクローンしてください。
 git clone [https://github.com/RiM72J/robosys2025x.git](https://github.com/RiM72J/robosys2025x.git)
