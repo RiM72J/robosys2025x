@@ -29,6 +29,7 @@ $ echo 100 | ./factorize
 -seqコマンドも使うことができます。
 ```
 $ seq 5 | ./factorize
+```
 1: 1
 2: 2
 3: 3
