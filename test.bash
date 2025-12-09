@@ -10,13 +10,13 @@ ng () {
 res=0
 
 out=$(echo 12 | ./factorize)
-[ "${out}" = "12: 2 2 3" ] || ng "$LINENO"
+[ "${out}" = "12: 2^2 * 3*1" ] || ng "$LINENO"
 
 out=$(echo 13 | ./factorize)
-[ "${out}" = "13: 13" ] || ng "$LINENO"
+[ "${out}" = "13: 13^1" ] || ng "$LINENO"
 
 out=$(echo 100 | ./factorize)
-[ "${out}" = "100: 2 2 5 5" ] || ng "$LINENO"
+[ "${out}" = "100: 2^2 * 5^5" ] || ng "$LINENO"
 
 out=$(echo あ | ./factorize 2>&1)
 [ "$?" = 1 ] || ng "$LINENO"
