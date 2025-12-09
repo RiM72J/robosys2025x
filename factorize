@@ -4,6 +4,7 @@
 
 import sys
 import signal
+import collections  
 
 signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 
@@ -43,9 +44,15 @@ def main():
             num = int(line)
             
             factors = prime_factorization(num)
+
+            counts = collections.Counter(factors)
+
+            formatted_factors = []
+            for base in sorted(counts.keys()):
+                exponent = counts[base]
+                formatted_factors.append(f"{base}^{exponent}")
             
-            print(f"{num}: {' '.join(map(str, factors))}")
-            
+           print(f"{num}: {' * '.join(formatted_factors)}") 
             sys.stdout.flush()
 
         except ValueError:
