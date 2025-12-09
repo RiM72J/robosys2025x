@@ -9,15 +9,22 @@ ng () {
 
 res=0
 
-out=$(echo 12 | ./factorize)
-[ "${out}" = "12: 2^2 * 3*1" ] || ng "$LINENO"
+### NORMAL INPUT ###
+# 期待値を指数形式 (例: 2^2 * 3^1) に修正しました
 
+# 12 -> 2^2 * 3^1
+out=$(echo 12 | ./factorize)
+[ "${out}" = "12: 2^2 * 3^1" ] || ng "$LINENO"
+
+# 13 -> 13^1
 out=$(echo 13 | ./factorize)
 [ "${out}" = "13: 13^1" ] || ng "$LINENO"
 
+# 100 -> 2^2 * 5^2
 out=$(echo 100 | ./factorize)
-[ "${out}" = "100: 2^2 * 5^5" ] || ng "$LINENO"
+[ "${out}" = "100: 2^2 * 5^2" ] || ng "$LINENO"
 
+### STRANGE INPUT ###
 out=$(echo あ | ./factorize 2>&1)
 [ "$?" = 1 ] || ng "$LINENO"
 echo ${out} | grep "Error" || ng "$LINENO"
