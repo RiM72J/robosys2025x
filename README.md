@@ -11,7 +11,7 @@
 ## 必要な環境 
 
 * python 3.7+
-* Linux (tested on Ubuntu 22.04)
+* Ubuntu 24.04 LTS
 
 ## 使用方法 
 - 標準入力から整数を渡します
